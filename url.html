@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="url.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="left">Safety Guard</div>
+        <div class="center">
+          <ul class="list">
+              <li><a href="home_page.html">Home</a></li>
+              <li><a href="url.html">Url</a></li>
+              <li><a href="home.html">SMS</a></li>
+              <li><a href="#">About</a></li>
+          </ul>
+        </div>
+        <div class="right">
+              <div class="notify"><a href="">🔔</a></div>
+              <div class="profile"><a href="">🧖</a></div>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="container">
+            <h1>URL Checker</h1>
+            <div class="image-container">
+                <a href="#"><img src="C:\Users\HP\Desktop\mini project\images.jpg" alt="SMS Checker Image"></a>
+            </div>
+            <p>Check if URL is spam or not.</p>
+            <form id="smsForm">
+                <label for="smsMessage">Enter ULR:</label>
+                <textarea id="smsMessage" name="smsMessage" rows="4" required></textarea>
+                <button type="button" onclick="checkSpam()">Check</button>
+            </form>
+            
+            <div id="result"></div>
+        </div>
+    </section>
+    
+    <script>
+    function checkSpam() {
+        var smsInput = document.getElementById("smsMessage").value.toLowerCase(); 
+        var spamKeywords = ["offer", "free", "cash prize", "win", "congratulations", "claim now", "limited time", "urgent"];
+        var isSpam = false;
+        
+        // Check for spam keywords in the SMS message
+        for (var i = 0; i < spamKeywords.length; i++) {
+            if (smsInput.includes(spamKeywords[i])) {
+                isSpam = true;
+                break;
+            }
+        }
+        
+        // Check for URLs in the SMS message
+        var urlPattern = /(https?:\/\/[^\s]+)/g;
+        var urls = smsInput.match(urlPattern);
+        if (urls && urls.length > 0) {
+            // Assume spam if any URL is detected
+            isSpam = true;
+        }
+        
+        // Display result based on spam detection
+        var resultDiv = document.getElementById("result");
+        if (isSpam) {
+            resultDiv.innerHTML = "This url is not safe. ";
+            resultDiv.style.color = "red";
+            
+            // Add options to handle spam URLs
+            if (urls && urls.length > 0) {
+                resultDiv.innerHTML += "Click <a href='#' onclick='handleSpamURLs()'>here</a> to report this message.";
+            }
+        } else {
+            resultDiv.textContent = "This url is  safe.";
+            resultDiv.style.color = "green";
+        }
+    }
+    
+    function handleSpamURLs() {
+        // Open the phishing reporting website in a new tab
+        var phishingURL = "https://phishtank.org/";
+        window.open(phishingURL, "_blank");
+    }
+    </script>
+    <br><br>
+<footer class="footer">
+    <div class="footer-content">
+      <p>&copy; Safety Guard. All rights reserved.</p><br><br>
+      <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+      </div><br><br><br><br>
+      <ul class="footer-links">
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </footer>
+    </body>
+    </html>
+    
+    
+    
+    
+    
+    
+    
+    

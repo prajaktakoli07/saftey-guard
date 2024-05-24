@@ -1,0 +1,55 @@
+*Spam SMS Example:
+"Congratulations! You've won a free vacation! 
+Click this link to claim your prize now! Limited time offer,
+ don't miss out! bit.ly/1234"
+
+"URGENT: Your account has been compromised! Click here to reset your password immediately: [link]. Failure to do so may result in permanent account suspension. Act now to secure your account."
+
+"Limited-time offer! Get 50% off all purchases at XYZ Store today only! Use code SAVE50 at checkout. Don't miss out on these incredible savings!"
+
+"Your entry has been selected! You've won a $1000 gift card from ABC Superstore. Claim your prize now by replying 'YES' to this message. Terms and conditions apply."
+
+"Attention [Your Name]: Your subscription to XYZ Magazine is expiring soon! Renew now and get an exclusive 20% discount. Click here to renew instantly: [link]."
+
+*Non-Spam SMS Example:
+Hi John, your package has been delivered to your doorstep. 
+Please confirm receipt. - Amazon Delivery"
+
+
+"Hi [Your Name], this is a reminder of your upcoming appointment with Dr. Smith at XYZ Clinic on [Date] at [Time]. Please remember to bring any necessary documents or test results. Reply 'CONFIRM' to confirm your attendance or call us at [Clinic Phone Number] if you need to reschedule. Thank you."
+
+Delivery Notification:
+"Hello! Your package with tracking number [Tracking Number] is out for delivery today. Please ensure someone is available to receive it. Track your package in real-time at [Carrier Website]. If you have any questions, contact our customer support team at [Customer Support Phone Number]."
+
+Spam SMS Example with URL:
+"Congratulations! You've won a free vacation! Click this link to
+ claim your prize: http://claimyourprize.com"
+
+http://fakepharmacy.com/buy-cheap-pills-now
+
+http://freemoneygiveaway.net/win-1000-dollars-now
+
+http://getrichquickly.biz/makemoneyonline
+
+http://miracleweightlossproduct.com/lose10poundsin1week
+
+
+Non-Spam SMS Example with URL:
+"Hi Sarah, your prescription is ready for pickup at HealthMart Pharmacy.
+ Please visit us at: www.healthmart.com/locations"
+
+https://www.amazon.com/
+
+https://www.flipkart.com/
+
+
+
+http://www.nytimes.com/
+http://www.Moziep.com/
+http://www.Bedbathsales.com/
+http://www.Arcade1up-clearance.com/
+http://www.heydudestores.com/
+http://www.Bedbathclosing.com/
+http://www.Universitycask.com/
+http://www.sagarbadjatesir.com/
+
